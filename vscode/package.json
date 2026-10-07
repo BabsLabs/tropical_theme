@@ -1,0 +1,86 @@
+{
+  "name": "tropical-theme",
+  "displayName": "Tropical Theme",
+  "description": "Twelve tropical colour themes for VS Code and Zed",
+  "version": "1.0.0",
+  "publisher": "babslabs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BabsLabs/tropical_theme.git"
+  },
+  "homepage": "https://github.com/BabsLabs/tropical_theme#readme",
+  "bugs": {
+    "url": "https://github.com/BabsLabs/tropical_theme/issues"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tropical High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/tropical-high-contrast-color-theme.json"
+      },
+      {
+        "label": "Tropical Jungle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-jungle-color-theme.json"
+      },
+      {
+        "label": "Tropical Rainforest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-rainforest-color-theme.json"
+      },
+      {
+        "label": "Tropical Cloud Forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-cloud-forest-color-theme.json"
+      },
+      {
+        "label": "Tropical Pantanal",
+        "uiTheme": "vs",
+        "path": "./themes/tropical-pantanal-color-theme.json"
+      },
+      {
+        "label": "Tropical Cenote",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-cenote-color-theme.json"
+      },
+      {
+        "label": "Tropical Mangroves",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-mangroves-color-theme.json"
+      },
+      {
+        "label": "Tropical Beach",
+        "uiTheme": "vs",
+        "path": "./themes/tropical-beach-color-theme.json"
+      },
+      {
+        "label": "Tropical Coral Reef",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-coral-reef-color-theme.json"
+      },
+      {
+        "label": "Tropical Bioluminescent Bay",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-bioluminescent-bay-color-theme.json"
+      },
+      {
+        "label": "Tropical Volcano",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-volcano-color-theme.json"
+      },
+      {
+        "label": "Tropical Coffee Highlands",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tropical-coffee-highlands-color-theme.json"
+      }
+    ]
+  }
+}

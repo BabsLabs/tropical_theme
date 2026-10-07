@@ -1,0 +1,7 @@
+id = "tropical-theme"
+name = "Tropical Theme"
+description = "Twelve tropical colour themes"
+version = "1.0.0"
+schema_version = 1
+authors = ["babslabs"]
+repository = "https://github.com/BabsLabs/tropical_theme"
