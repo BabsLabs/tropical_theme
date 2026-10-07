@@ -1,6 +1,6 @@
 # Tropical Theme
 
-Twelve tropical colour themes for VS Code, each named after a tropical place and coloured from the plants and animals
+Twelve tropical color themes for VS Code, each named after a tropical place and colored from the plants and animals
 that live there.
 
 ## Installing
@@ -96,6 +96,6 @@ Dark. Black, lava red and sulfur yellow.
 
 ### Tropical Coffee Highlands
 
-Dark. Espresso and latte, with crema keywords and code coloured from coffee tasting notes.
+Dark. Espresso and latte, with crema keywords and code colored from coffee tasting notes.
 
 ![Tropical Coffee Highlands in VS Code](screenshots/coffee-highlands.png)

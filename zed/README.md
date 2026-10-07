@@ -1,12 +1,12 @@
 # Tropical Theme
 
-Twelve tropical colour themes for Zed, each named after a tropical place and coloured from the plants and animals
+Twelve tropical color themes for Zed, each named after a tropical place and colored from the plants and animals
 that live there.
 
 ## Installing
 
 Install this folder as an extension. Open the Command Palette, run **zed: install dev extension**, and choose this
-`zed` folder. When the themes change, run **zed: rebuild dev extension** to load the new colours.
+`zed` folder. When the themes change, run **zed: rebuild dev extension** to load the new colors.
 
 If you'd rather not install an extension, copy `themes/tropical.json` into `~/.config/zed/themes/`. Zed picks it up
 without a restart.
@@ -30,7 +30,7 @@ To switch between a light and a dark theme with your system's appearance, set `t
 
 ## Recommended settings
 
-Every theme has six signature colours. Zed uses them for coloured bracket pairs and indent guides once you turn those
+Every theme has six signature colors. Zed uses them for colored bracket pairs and indent guides once you turn those
 on:
 
 ```json
@@ -110,6 +110,6 @@ Dark. Black, lava red and sulfur yellow.
 
 ### Tropical Coffee Highlands
 
-Dark. Espresso and latte, with crema keywords and code coloured from coffee tasting notes.
+Dark. Espresso and latte, with crema keywords and code colored from coffee tasting notes.
 
 ![Tropical Coffee Highlands in Zed](screenshots/coffee-highlands.png)

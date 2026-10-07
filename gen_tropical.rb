@@ -12,9 +12,9 @@ VERSION = "1.0.0"
 
 # chrome = title/activity bar, accent = VS Code's status bar unless `status` names another role (Zed's is
 # always chrome), pop = badges and remote/debug items,
-# icons = the six signature colours used for bracket pairs, indent guides, Zed accents and collaborators.
-# Every chromatic role names one of the palette's swatches, so each colour has exactly one definition;
-# surfaces and text stay literal region-tinted neutrals. The 6th icon colours Zed's AI agent, so it is
+# icons = the six signature colors used for bracket pairs, indent guides, Zed accents and collaborators.
+# Every chromatic role names one of the palette's swatches, so each color has exactly one definition;
+# surfaces and text stay literal region-tinted neutrals. The 6th icon colors Zed's AI agent, so it is
 # never a green or red that would read as a diff.
 def resolve(d)
   pick = ->(v) { v.is_a?(String) ? d[:swatches].fetch(v.to_sym, v) : v }
@@ -205,7 +205,7 @@ PALETTES = [
   },
   {
     # Red, black and sulfur, with no orange: that belongs to Mangroves. Kawah Ijen's blue sulfur
-    # fire and volcanic lightning supply the cool colours.
+    # fire and volcanic lightning supply the cool colors.
     name: "Volcano", slug: "volcano", appearance: "dark",
     swatches: {
       lava: "#ff2a1a", lava_glow: "#ff5a47", lava_pale: "#ff9a8a", sulfur: "#ffe14d",
@@ -226,8 +226,8 @@ PALETTES = [
     search: "sulfur", keyword_style: "bold", type_style: "bold",
   },
   {
-    # The cup frames it (espresso, roasted bean, latte) and cupping notes colour the code, all at
-    # one CIELAB lightness so no colour glares. Crema keywords and the roasted-bean frame keep it
+    # The cup frames it (espresso, roasted bean, latte) and cupping notes color the code, all at
+    # one CIELAB lightness so no color glares. Crema keywords and the roasted-bean frame keep it
     # apart from Mangroves, whose background it shares. Mustard reads olive on brown, so crema leans amber.
     name: "Coffee Highlands", slug: "coffee-highlands", appearance: "dark",
     swatches: {
@@ -299,7 +299,7 @@ def derive(d)
   p.error, p.warning, p.info, p.success, p.modified = p.red, p.yellow, p.blue, p.green, p.preproc
   p.param_style = d.fetch(:param_style, "italic")
   p.status = p[d.fetch(:status, "accent")]
-  # Zed paints title/status bar text with the one global text colour, so light themes can't use their dark chrome.
+  # Zed paints title/status bar text with the one global text color, so light themes can't use their dark chrome.
   p.zed_chrome = contrast(p.fg, p.chrome) >= 4.5 ? p.chrome : p.panel
   p.shadow = dark ? "#00000066" : p.fg + "22"
   p
@@ -432,7 +432,7 @@ def vscode_theme(p)
   p.icons.each.with_index(1) do |c, i|
     brackets[:"editorBracketHighlight.foreground#{i}"] = c
     brackets[:"editorBracketPairGuide.activeBackground#{i}"] = c + "99"
-    # VS Code drops an indent level unless both of its colours are set.
+    # VS Code drops an indent level unless both of its colors are set.
     brackets[:"editorIndentGuide.background#{i}"] = c + (p.dark? ? "33" : "4d")
     brackets[:"editorIndentGuide.activeBackground#{i}"] = c + "b3"
   end
@@ -655,7 +655,7 @@ def vscode_theme(p)
       # VS Code maps readonly to variable.other.constant, which would paint every JS `const` like a number.
       "variable.readonly": p.fg,
       "property.readonly": p.property,
-      # ruby-lsp sends `self` as a defaultLibrary variable; Zed colours it as variable.special.
+      # ruby-lsp sends `self` as a defaultLibrary variable; Zed colors it as variable.special.
       "variable.defaultLibrary:ruby": p.special,
       "*.deprecated": { strikethrough: true },
     },

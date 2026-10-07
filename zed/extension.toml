@@ -1,6 +1,6 @@
 id = "tropical-theme"
 name = "Tropical Theme"
-description = "Twelve tropical colour themes"
+description = "Twelve tropical color themes"
 version = "1.0.0"
 schema_version = 1
 authors = ["babslabs"]
